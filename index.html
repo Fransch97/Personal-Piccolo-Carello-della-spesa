@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css' integrity='sha512-c9N/Xq0n4rQdyCXF4RgrRYAAOSnNJDp8NWILsSUx+33zWyaMbXXvqajgO0UXybRdTGVpxq3FBrcGwabkWsT8OA==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Boolando</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
+</head>
+<body>
+
+  <header>
+    <div class="input-group mb-3 w-75 m-auto">
+      <input type="text" class="form-control" placeholder="Cerca france" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-primary" type="button" id="button-addon2" >Cerca</button>
+      <div class="cart">
+        <button class="btn btn-dark position-relative" type="button" id="cart" >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <div class="added-Products hide" style="width: 14vw; height: 400px; position: absolute; background-color: white; top:103%; left: 0; color: black; padding: 10px; border: solid 1px black; overflow: auto;">
+            <!-- <div class="item" style="border-bottom: solid 1px black;"><img src="img/1.webp" style="width: 30px;" alt="">
+              <span>Brand</span>
+              <span>Product Name</span>
+              <span>price</span>
+            </div> -->
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container d-flex flex-wrap">
+
+    <div class="card p-2">
+      <div class="card-image">
+        <img class="first-image" src="img/1.webp" alt="nome prodotto">
+        <img class="second-image" src="img/1b.webp" alt="nome prodotto">
+        <div class="heart">&hearts;</div>
+        <div class="card-promo">
+            <span class="card-discount">-50&percnt;</span>
+            <span class="card-tag">Sostenibilit&agrave;</span>
+        </div>
+      </div>
+
+      <div class="card-text">
+        <span class="brand">Levi's</span>
+        <h3 class="product-name">X</h3>
+        <span class="price">14,99&euro;</span>
+        <del class="orginal-price">29,99&euro;</del>
+      </div>
+      <div class="card-text">
+        <div class="btn btn-dark">Aggiungi al carello</div>
+      </div>
+    </div>
+    
+
+  </div>
+  
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

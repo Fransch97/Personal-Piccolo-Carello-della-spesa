@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  padding: 20px 0 6px 0;
+  background-color: lightblue;
+}
+
+.container{
+  width: 80%;
+  margin: 85px auto;
+  padding-top: 20px;
+}
+
+.card{
+  width: calc(100% / 3);
+  display: inline-block;
+  padding: 10px;
+}
+
+.card-image{
+  position: relative;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-image .heart{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 15px;
+}
+
+.card-promo{
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+.card-promo span{
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.card-promo .card-discount{
+  background-color: red;
+}
+
+.card-promo .card-tag{
+  background-color: green;
+}
+
+/********* gestione swap image  ***********/
+
+/* di default l'immagine b display none */
+.second-image{
+  display: none;
+}
+
+/* all'hover di card-image nascondo l'immagine a e mostro la b */
+.card-image:hover .first-image{
+  display: none;
+}
+.card-image:hover .second-image{
+  display: inline-block;
+}
+
+
+/************ card-text */
+.card-text span, del{
+  font-size: 14px;
+}
+
+.card-text h3{
+  text-transform: uppercase;
+}
+
+.card-text .price{
+  color: red;
+  font-weight: bold;
+}
+
+.card-text .orginal-price{
+  /* text-decoration: line-through; */
+}
+
+.hide{
+  display: none;
+}
